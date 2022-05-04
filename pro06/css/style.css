@@ -1,3 +1,14 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareB.woff);
+}
+
+*{
+    font-family: 'gulim';
+    font-weight: 900;
+    transform: rotate(0.03deg);
+}
+
 .btn{
     padding: 10px;
     border-radius: 5px;
@@ -11,4 +22,43 @@
 }
 .btn-blue{
     background-color: blue;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 5px;
+}
+
+.flex-item:nth-child(1){
+    flex-grow: 2;
+}
+
+.flex-item:nth-child(2){
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(3){
+    flex-grow: 3;
+}
+
+nav{
+    background-color: beige;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+nav div{
+    margin-right: 30px;
 }

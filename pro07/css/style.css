@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.main-background{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+.main-title{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.main-background > p{
+    color: #fff;
+}
+
+.main-button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 150px;
+    margin: 20px auto;
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sub-box{
+    width: 80%;
+    min-width: 600px;
+    max-width: 600px;
+    position: relative;
+    top: -50px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #eee;
+}
+
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+nav div{
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-title{
+        font-size: 30px;
+    }
+
+    nav div{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title{
+        font-size: 20px;
+    }
+
+    nav div{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-title{
+        font-size: 20px;
+    }
+
+    nav div{
+        font-size: 8px;
+    }
+}
