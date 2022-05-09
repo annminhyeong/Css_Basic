@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pseudo::before{
+            content: 'abcdefg';
+            color: red;
+            font-size: 30px;
+        }
+
+        .product-container::after{
+            content: '';
+            display: block;
+            clear: both;
+            float: none;
+        }
+
+        .input-file1::file-selector-button{
+            background-color: skyblue;
+            border: none;
+        }
+
+        .input-file1::file-selector-button:hover{
+            background-color: red;
+        }
+
+        input[type=file]::-webkit-file-upload-button{
+            background-color: skyblue;
+            border: none;
+        }
+
+        .input1::-webkit-input-placeholder{
+            color: red;
+        }
+
+        input[type=range]{
+            appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb{
+            appearance: none;
+            background: red;
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <p class="pseudo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem obcaecati laboriosam eos animi ducimus doloribus, quia cum iste, impedit dolores dolorem. Explicabo saepe dignissimos illum perspiciatis quas voluptates sapiente.
+        </p>
+        <input type="file" class="input-file1">
+        <input type="file" class="input-file2">
+        <input type="text" class="input1" placeholder="안녕">
+        <input type="range" class="range1">
+    </div>
+</body>
+</html>

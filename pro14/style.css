@@ -1,0 +1,39 @@
+.background {
+  background-color: #2a4cb2;
+  font-size: 100px -2px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2a4cb2;
+}
+
+.box p {
+  color: white;
+}
+.box h4 {
+  background-color: rebeccapurple;
+}
+
+.btn-blue, .btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.test {
+  margin: 10px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn-blue {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

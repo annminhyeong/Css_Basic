@@ -1,0 +1,47 @@
+$main-color : #2a4cb2;
+$main-size : 100px;
+
+.background{
+    background-color: $main-color;
+    font-size: $main-size -2px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: $main-color;
+}
+
+.box{
+    p{
+        color: white;
+    }
+
+    h4{
+        background-color: rebeccapurple;
+    }
+}
+
+%btn{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.test{
+    margin: 10px;
+}
+.btn-green{
+    @extend %btn;
+    color: green;
+}
+
+.btn-red{
+    @extend %btn;
+    color: red;
+}
+
+.btn-blue{
+    @extend %btn;
+    color: blue;
+}

@@ -1,0 +1,17 @@
+@use '_reset.scss';
+
+@mixin titleTag($fontVar, $reg) {
+    font-size: $fontVar;
+    #{ $reg } : 1px;
+}
+
+h2{
+    @include titleTag(30px, letter-spacing);
+    color: reset.$main-color;
+}
+h3{
+    @include titleTag(20px, width);
+}
+h4{
+    @include titleTag(10px, height);
+}

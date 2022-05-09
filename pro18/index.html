@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .ani-text{
+            text-align: center;
+        }
+
+        .ani-text:hover{
+            animation-name: ani1;
+            animation-duration: 1s;
+        }
+
+        @keyframes ani1{
+            0%{
+                transform: translateX(0px);
+            }
+
+            50%{
+                transform: translateX(-100px);
+            }
+
+            75%{
+                transform: translateX(100px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        button{
+            background-color: skyblue;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:hover{
+            animation-name: ani2;
+            animation-duration: 1s;
+        }
+
+        @keyframes ani2{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            35%{
+                transform: rotate(10deg);
+            }
+
+            70%{
+                transform: rotate(-10deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
+        .ani-x{
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 70px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        .ani-x:hover{
+            animation-name: ani3;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ani3{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            25%{
+                transform: rotate(-15deg);
+            }
+
+            100%{
+                transform: rotate(45deg) scale(2);
+            }
+        }
+
+
+        .ani-nav{
+            z-index: 5;
+            width: 200px;
+            height: 100%;
+            color: white;
+            background-color: black;
+            padding: 25px;
+            position: fixed;
+            text-align: right;
+            transform: translateX(-150px);
+            transition: all 1s;
+        }
+
+        .ani-nav:hover{
+            transform: translateX(0px);
+            text-align: center;
+        }
+
+        .ani-nav:hover p{
+            animation-name: ani4;
+            animation-duration: 1s;
+        }
+
+        @keyframes ani4 {
+            0%{
+                transform: translateX(-150px);
+            }
+
+            50%{
+                transform: translateX(20px) skewX(-30deg);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="ani-nav">
+        <h4>Menu</h4>
+        <p>Item</p>
+    </nav>
+    <h4 class="ani-text">안녕하세요</h4>
+    <button>흔들버튼</button>
+    <div class="ani-x">+</div>
+</body>
+</html>
